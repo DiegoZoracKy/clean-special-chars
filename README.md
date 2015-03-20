@@ -1,6 +1,6 @@
 # cleanSpecialChars
 
-It converts accented letters to its cleaned form like 'Ã' to 'A', Spaces to '-' and '&' to 'and'. The text is returned in Lower Case
+It converts accented letters to its cleaned form like 'Ã' to 'A', 'ç' to 'c', '&!*' to '', etc. All spaces will be converted to '-'. The text is returned in Lower Case
 
 ## Usage / Examples
 
