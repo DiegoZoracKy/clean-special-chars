@@ -1,7 +1,7 @@
 {
 	"name": "clean-special-chars",
 	"version": "1.0",
-	"description": "It converts accented letters to its cleaned form like 'Ã' to 'A', 'ç' to 'c', '&!*' to '', etc. All spaces will be converted to '-'. The text is returned in Lower Case",
+	"description": "It converts accented letters to its cleaned form like 'Ã' to 'A', 'ç' to 'c', '&!*' to '', etc. All spaces will be converted to '-' and the text is returned in Lower Case",
 	"homepage": "https://github.com/DiegoZoracKy/clean-special-chars",
 	"main": "./lib/clean-special-chars.js",
 	"author": {
