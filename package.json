@@ -1,0 +1,23 @@
+{
+	"name": "clean-special-chars",
+	"version": "1.0",
+	"description": "It converts accented letters to its cleaned form like 'Ã' to 'A', Spaces to '-' and '&' to 'and'. The text is returned in Lower Case",
+	"homepage": "https://github.com/DiegoZoracKy/clean-special-chars",
+	"main": "./lib/clean-special-chars.js",
+	"author": {
+		"name": "Diego ZoracKy",
+		"email": "diego.zoracky@gmail.com",
+		"url": "diegozoracky.com",
+		"twitter": "@diegozoracky"
+	},
+	"licenses": {
+		"type": "MIT",
+		"url": "http://www.opensource.org/licenses/MIT"
+	},
+	"directories": {},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/DiegoZoracKy/clean-special-chars.git"
+	},
+	"bugs": "https://github.com/DiegoZoracKy/clean-special-chars/issues"
+}
