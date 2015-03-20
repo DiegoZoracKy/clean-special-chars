@@ -3,23 +3,95 @@
 2 info using npm@1.4.28
 3 info using node@v0.10.35
 4 verbose publish [ '.' ]
-5 error Error: Invalid version: "1.0"
-5 error     at Object.module.exports.fixVersionField (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/fixer.js:183:13)
-5 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:30:38
-5 error     at Array.forEach (native)
-5 error     at normalize (/usr/local/lib/node_modules/npm/node_modules/read-package-json/node_modules/normalize-package-data/lib/normalize.js:29:15)
-5 error     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:342:33)
-5 error     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:126:33)
-5 error     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:331:40
-5 error     at evalmachine.<anonymous>:272:14
-5 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:102:5
-5 error     at Object.oncomplete (evalmachine.<anonymous>:108:15)
-6 error If you need help, you may report this *entire* log,
-6 error including the npm and node versions, at:
-6 error     <http://github.com/npm/npm/issues>
-7 error System Darwin 13.3.0
-8 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
-9 error cwd /Users/DiegoZoracKy/Sites/lab/js/clean-special-chars
-10 error node -v v0.10.35
-11 error npm -v 1.4.28
-12 verbose exit [ 1, true ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . /Users/DiegoZoracKy/.npm/3a52ce78-.lock
+10 verbose tar pack [ '/Users/DiegoZoracKy/.npm/clean-special-chars/1.0.0/package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball /Users/DiegoZoracKy/.npm/clean-special-chars/1.0.0/package.tgz
+12 verbose folder .
+13 info prepublish clean-special-chars@1.0.0
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. /Users/DiegoZoracKy/.npm/1f1177db-tar.lock
+16 silly lockFile ecb41f3e--special-chars-1-0-0-package-tgz tar:///Users/DiegoZoracKy/.npm/clean-special-chars/1.0.0/package.tgz
+17 verbose lock tar:///Users/DiegoZoracKy/.npm/clean-special-chars/1.0.0/package.tgz /Users/DiegoZoracKy/.npm/ecb41f3e--special-chars-1-0-0-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile ecb41f3e--special-chars-1-0-0-package-tgz tar:///Users/DiegoZoracKy/.npm/clean-special-chars/1.0.0/package.tgz
+21 silly lockFile ecb41f3e--special-chars-1-0-0-package-tgz tar:///Users/DiegoZoracKy/.npm/clean-special-chars/1.0.0/package.tgz
+22 silly lockFile 67321d03-lean-special-chars-1-0-0-package /Users/DiegoZoracKy/.npm/clean-special-chars/1.0.0/package
+23 verbose lock /Users/DiegoZoracKy/.npm/clean-special-chars/1.0.0/package /Users/DiegoZoracKy/.npm/67321d03-lean-special-chars-1-0-0-package.lock
+24 silly lockFile 67321d03-lean-special-chars-1-0-0-package /Users/DiegoZoracKy/.npm/clean-special-chars/1.0.0/package
+25 silly lockFile 67321d03-lean-special-chars-1-0-0-package /Users/DiegoZoracKy/.npm/clean-special-chars/1.0.0/package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'clean-special-chars',
+28 silly publish   version: '1.0.0',
+28 silly publish   description: 'Converts accented letters to its cleaned form like \'Ã\' to \'A\', \'ç\' to \'c\', \'&!*\' to \'\', etc. All spaces will be converted to \'-\' and the text is returned in Lower Case',
+28 silly publish   homepage: 'https://github.com/DiegoZoracKy/clean-special-chars',
+28 silly publish   main: './lib/clean-special-chars.js',
+28 silly publish   author:
+28 silly publish    { name: 'Diego ZoracKy',
+28 silly publish      email: 'diego.zoracky@gmail.com',
+28 silly publish      url: 'diegozoracky.com' },
+28 silly publish   licenses: { type: 'MIT', url: 'http://www.opensource.org/licenses/MIT' },
+28 silly publish   directories: {},
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'git://github.com/DiegoZoracKy/clean-special-chars.git' },
+28 silly publish   bugs: { url: 'https://github.com/DiegoZoracKy/clean-special-chars/issues' },
+28 silly publish   readme: '# cleanSpecialChars\n\nConverts accented letters to its cleaned form like \'Ã\' to \'A\', \'ç\' to \'c\', \'&!*\' to \'\', etc. All spaces will be converted to \'-\' and the text is returned in Lower Case.\n\nIt can be installed and used on Node environments.\n\n## Usage / Examples\n\n```javascript\n\ncleanSpecialChars(\'ação & reação\')\n// Output: acao-reacao\n\ncleanSpecialChars(\'ação & reação\', {\'&\': \'and\'});\n// Output: acao-and-reacao\n\n```\n\n## Installation\n```javascript\n\nnpm install clean-special-chars\n\n```',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'd5188d53d4ddf5339329db4f796ded06b3d992e2',
+28 silly publish   _id: 'clean-special-chars@1.0.0',
+28 silly publish   scripts: {},
+28 silly publish   _shasum: '17fc4dd8b3de76232e7671dc2b8e7af51f42e851',
+28 silly publish   _from: '.' }
+29 verbose request where is /clean-special-chars
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 7f8667b5ba91414b
+32 verbose url raw /clean-special-chars
+33 verbose url resolving [ 'https://registry.npmjs.org/', './clean-special-chars' ]
+34 verbose url resolved https://registry.npmjs.org/clean-special-chars
+35 verbose request where is https://registry.npmjs.org/clean-special-chars
+36 info trying registry request attempt 1 at 18:36:32
+37 http PUT https://registry.npmjs.org/clean-special-chars
+38 http 409 https://registry.npmjs.org/clean-special-chars
+39 verbose request where is /clean-special-chars?write=true
+40 verbose request registry https://registry.npmjs.org/
+41 verbose url raw /clean-special-chars?write=true
+42 verbose url resolving [ 'https://registry.npmjs.org/',
+42 verbose url resolving   './clean-special-chars?write=true' ]
+43 verbose url resolved https://registry.npmjs.org/clean-special-chars?write=true
+44 verbose request where is https://registry.npmjs.org/clean-special-chars?write=true
+45 info trying registry request attempt 1 at 18:36:34
+46 http GET https://registry.npmjs.org/clean-special-chars?write=true
+47 http 200 https://registry.npmjs.org/clean-special-chars?write=true
+48 error publish fail Cannot publish over existing version.
+48 error publish fail Update the 'version' field in package.json and try again.
+48 error publish fail
+48 error publish fail If the previous version was published in error, see:
+48 error publish fail     npm help unpublish
+48 error publish fail
+48 error publish fail To automatically increment version numbers, see:
+48 error publish fail     npm help version
+49 error System Darwin 13.3.0
+50 error command "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+51 error cwd /Users/DiegoZoracKy/Sites/lab/js/clean-special-chars
+52 error node -v v0.10.35
+53 error npm -v 1.4.28
+54 error code EPUBLISHCONFLICT
+55 verbose exit [ 1, true ]
